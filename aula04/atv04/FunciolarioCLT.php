@@ -1,18 +1,32 @@
-
 <?php
 
 require_once 'FuncionarioInterface.php';
 
-class FuncionarioCLT implements FuncionarioInterface {
+class FuncionarioCLT implements FuncionarioInterface{
+
+    private string $nome;
+    private string $email;
+    private string $cargo;
+    private float $salario;
+    private bool $status;
+
+    public function __construct($nome, $email, $cargo, $salario){
+        $this->nome = $nome;
+        $this->email = $email;
+        $this->cargo = $cargo;
+        $this->salario = $salario;
+        $this->status = false;
+    }
 
     public function contratar(){
-        return "Funcionario CLT contratado!";
+        $this->status = true;
+        return "Funcionário contratado!";
     }
 
     public function demitir(){
-        return "Funcionario CLT demitido!";
+        $this->status = false;
+        return "Funcionário demitido!";
     }
-
 }
 
 ?>

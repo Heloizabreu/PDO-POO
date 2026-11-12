@@ -1,20 +1,13 @@
-
 <?php
 
 require_once 'FuncionarioCLT.php';
 require_once 'FuncionarioPJ.php';
 
-$clt = new FuncionarioCLT();
-$pj = new FuncionarioPJ();
+$c1 = new FuncionarioCLT("João", "joao@gmail.com", "Programador", 3000);
 
-echo $clt->contratar();
-echo "<br>";
-echo $clt->demitir();
+$c2 = new FuncionarioPJ("Maria", "maria@gmail.com", "Designer", 4000);
 
-echo "<br>";
-
-echo $pj->contratar();
-echo "<br>";
-echo $pj->demitir();
+echo $c1->contratar();
+echo $c2->contratar();
 
 ?>
