@@ -3,8 +3,6 @@
 
 require_once 'FuncionarioInterface.php';
 
-//Criando a classe FuncionarioCLT
-
 class FuncionarioCLT implements FuncionarioInterface {
 
     public function contratar(){

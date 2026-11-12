@@ -3,8 +3,6 @@
 
 require_once 'FuncionarioInterface.php';
 
-//Criando a classe FuncionarioPJ
-
 class FuncionarioPJ implements FuncionarioInterface {
 
     public function contratar(){
