@@ -10,9 +10,10 @@ class FuncionarioCLT implements FuncionarioInterface{
     private float $salario;
     private bool $status;
 
-    public function __construct($nome, $email, $cargo, $salario){
+    public function __construct($nome, $email, $telefone, $cargo, $salario){
         $this->nome = $nome;
         $this->email = $email;
+        $this->telefone = $telefone;
         $this->cargo = $cargo;
         $this->salario = $salario;
         $this->status = false;
